@@ -9,7 +9,7 @@ export default function BookFlight() {
   return (
     <View style={{ padding: 20 }}>
       <TextInput placeholder="Destination" value={destination} onChangeText={setDestination} />
-      <TextInput placeholder="Departure Date (YYYY-MM-DD)" value={date} onChangeText={setDate} />
+      <TextInput placeholder="Departure Date (DD-MM-YYYY)" value={date} onChangeText={setDate} />
       <Button
         title="Continue"
         onPress={() =>

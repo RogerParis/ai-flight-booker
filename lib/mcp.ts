@@ -13,9 +13,10 @@ export const sendMCPToGPT = async (context: any) => {
         content: `MCP Context:\n${JSON.stringify(context, null, 2)}`,
       },
     ],
+    max_tokens: 140,
   };
 
-  const res = await fetch('https://api.openai.com/v1/chat/completions', {
+  const res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
     method: 'POST',
     headers: {
       Authorization: `Bearer ${env.AI_API_KEY}`,
