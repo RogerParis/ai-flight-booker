@@ -1,6 +1,6 @@
 const getEnvVars = () => {
   return {
-    AI_API_KEY: process.env.EXPO_PUBLIC_AI_API_KEY,
+    //AI_API_KEY: process.env.EXPO_PUBLIC_AI_API_KEY,
   };
 };
 
