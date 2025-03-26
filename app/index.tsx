@@ -1,15 +1,11 @@
-import { Text, View } from "react-native";
+import { View, Text, Button } from 'react-native';
+import { router } from 'expo-router';
 
-export default function Index() {
+export default function Home() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
+    <View style={{ padding: 20 }}>
+      <Text style={{ fontSize: 20 }}>Welcome to AI Flight Booker ✈️</Text>
+      <Button title="Book a Flight" onPress={() => router.push('/book-flight')} />
     </View>
   );
 }
