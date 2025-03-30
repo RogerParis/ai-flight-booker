@@ -59,6 +59,7 @@ export const transcribeSpeech = async (
             : Device.isDevice
             ? process.env.LOCAL_DEV_IP || "localhost"
             : "localhost";
+        // const serverUrl = `http://${rootOrigin}:4000`;
         const serverUrl = `http://192.168.2.40:4000`;
         console.log("Audio Data URL:", dataUrl);
         const serverResponse = await fetch(`${serverUrl}/speech-to-text`, {
